@@ -39,8 +39,21 @@ typedef struct alumno_s {
 
 /*=====[Prototypes (declarations) of public functions]=======================*/
 
+/** @brief funcion utilizada para imprimir los datos del alumno
+ * @param cadena puntero de tipo char, 
+ * @param espacio variable de tipo size_t
+ * @param alumnno estructura que contiene datos del alumno
+ * @retval true operacion exitosa
+ * @retval false no se pudo imprimir alumno
+ */ 
 bool SerializarAlumno(char * cadena, size_t espacio, const alumno_t alumno);
 
+/** @brief imprime lista de alumnos
+ *  @param puntero a arreglo de tipo char
+ *  @param espacio variable de tipo size_t
+ *  @retval true operacion exitosa
+ *  @retval false error al serializar al alumno
+ */ 
 bool SerializarAlumnos(char * cadena, size_t espacio);
 
 /*=====[Prototypes (declarations) of public interrupt functions]=============*/

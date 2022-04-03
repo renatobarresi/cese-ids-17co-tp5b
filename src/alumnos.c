@@ -25,16 +25,19 @@
 
 /*=====[Definitions of public global variables]==============================*/
 
+///estructura de tipo alumno_s con los datos del alumno Renato Barresi 
 static const struct alumno_s RENATO_BARRESI = {
     .apellidos = "BARRESI",
     .nombres = "Renato Luis",
     .documento = "3.908.997",
 };
 
+///arreglo de tipo alumno_t que contiene punteros a estructuras de tipo alumnos_s
 const alumno_t ALUMNOS[] = {
     &RENATO_BARRESI,
 };
 
+///guarda la cantidad de alumnos en el arreglo
 const int CANTIDAD_ALUMNOS = (sizeof(ALUMNOS) / sizeof(alumno_t));
 
 /*=====[Definitions of private global variables]=============================*/
