@@ -29,6 +29,8 @@ extern "C" {
 
 /*=====[Definitions of public data types]====================================*/
 
+///Estructura con campos correspondientes al alumno
+
 typedef struct alumno_s {
     char apellidos[30];
     char nombres[30];
